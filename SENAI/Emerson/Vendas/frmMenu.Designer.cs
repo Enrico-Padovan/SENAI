@@ -55,7 +55,7 @@
             this.sairToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(469, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(504, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -99,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 262);
+            this.label1.Location = new System.Drawing.Point(75, 273);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 19);
             this.label1.TabIndex = 2;
@@ -109,7 +109,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(316, 262);
+            this.label4.Location = new System.Drawing.Point(338, 273);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 19);
             this.label4.TabIndex = 7;
@@ -120,7 +120,7 @@
             this.pbxProdutos.Image = global::Vendas.Properties.Resources.carrinho_de_compras;
             this.pbxProdutos.Location = new System.Drawing.Point(12, 41);
             this.pbxProdutos.Name = "pbxProdutos";
-            this.pbxProdutos.Size = new System.Drawing.Size(212, 205);
+            this.pbxProdutos.Size = new System.Drawing.Size(235, 229);
             this.pbxProdutos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProdutos.TabIndex = 5;
             this.pbxProdutos.TabStop = false;
@@ -129,9 +129,9 @@
             // pbxSair
             // 
             this.pbxSair.Image = global::Vendas.Properties.Resources.sair;
-            this.pbxSair.Location = new System.Drawing.Point(195, 310);
+            this.pbxSair.Location = new System.Drawing.Point(196, 351);
             this.pbxSair.Name = "pbxSair";
-            this.pbxSair.Size = new System.Drawing.Size(80, 76);
+            this.pbxSair.Size = new System.Drawing.Size(101, 91);
             this.pbxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxSair.TabIndex = 3;
             this.pbxSair.TabStop = false;
@@ -140,9 +140,9 @@
             // pbxVenda
             // 
             this.pbxVenda.Image = global::Vendas.Properties.Resources.ponto_de_venda;
-            this.pbxVenda.Location = new System.Drawing.Point(245, 41);
+            this.pbxVenda.Location = new System.Drawing.Point(257, 41);
             this.pbxVenda.Name = "pbxVenda";
-            this.pbxVenda.Size = new System.Drawing.Size(212, 205);
+            this.pbxVenda.Size = new System.Drawing.Size(235, 229);
             this.pbxVenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxVenda.TabIndex = 1;
             this.pbxVenda.TabStop = false;
@@ -152,7 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 398);
+            this.ClientSize = new System.Drawing.Size(504, 454);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pbxProdutos);
             this.Controls.Add(this.pbxSair);

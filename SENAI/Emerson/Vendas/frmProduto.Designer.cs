@@ -51,7 +51,7 @@
             this.btnIncerir.BackColor = System.Drawing.Color.Blue;
             this.btnIncerir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncerir.ForeColor = System.Drawing.Color.White;
-            this.btnIncerir.Location = new System.Drawing.Point(332, 18);
+            this.btnIncerir.Location = new System.Drawing.Point(412, 13);
             this.btnIncerir.Name = "btnIncerir";
             this.btnIncerir.Size = new System.Drawing.Size(146, 41);
             this.btnIncerir.TabIndex = 0;
@@ -73,7 +73,7 @@
             // 
             this.txtId.Location = new System.Drawing.Point(26, 34);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(112, 20);
+            this.txtId.Size = new System.Drawing.Size(175, 20);
             this.txtId.TabIndex = 2;
             // 
             // dgvProduto
@@ -84,7 +84,7 @@
             this.dgvProduto.Location = new System.Drawing.Point(26, 172);
             this.dgvProduto.Name = "dgvProduto";
             this.dgvProduto.ReadOnly = true;
-            this.dgvProduto.Size = new System.Drawing.Size(452, 206);
+            this.dgvProduto.Size = new System.Drawing.Size(532, 215);
             this.dgvProduto.TabIndex = 4;
             this.dgvProduto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduto_CellClick);
             // 
@@ -92,7 +92,7 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(26, 85);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(247, 20);
+            this.txtNome.Size = new System.Drawing.Size(360, 20);
             this.txtNome.TabIndex = 6;
             // 
             // label2
@@ -107,9 +107,9 @@
             // 
             // txtQuantidade
             // 
-            this.txtQuantidade.Location = new System.Drawing.Point(26, 133);
+            this.txtQuantidade.Location = new System.Drawing.Point(26, 135);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(96, 20);
+            this.txtQuantidade.Size = new System.Drawing.Size(153, 20);
             this.txtQuantidade.TabIndex = 8;
             // 
             // label3
@@ -124,16 +124,16 @@
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(154, 133);
+            this.txtPreco.Location = new System.Drawing.Point(197, 135);
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(96, 20);
+            this.txtPreco.Size = new System.Drawing.Size(189, 20);
             this.txtPreco.TabIndex = 10;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(151, 114);
+            this.label4.Location = new System.Drawing.Point(194, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 16);
             this.label4.TabIndex = 9;
@@ -144,7 +144,7 @@
             this.btnAtualizar.BackColor = System.Drawing.Color.Green;
             this.btnAtualizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(332, 65);
+            this.btnAtualizar.Location = new System.Drawing.Point(412, 64);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(146, 41);
             this.btnAtualizar.TabIndex = 11;
@@ -157,7 +157,7 @@
             this.btnExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnExcluir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(332, 112);
+            this.btnExcluir.Location = new System.Drawing.Point(412, 114);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(146, 41);
             this.btnExcluir.TabIndex = 12;
@@ -170,7 +170,7 @@
             this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(332, 397);
+            this.btnFechar.Location = new System.Drawing.Point(412, 393);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(146, 41);
             this.btnFechar.TabIndex = 13;
@@ -181,7 +181,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Vendas.Properties.Resources.procurando;
-            this.pictureBox1.Location = new System.Drawing.Point(193, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(290, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(80, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 450);
+            this.ClientSize = new System.Drawing.Size(570, 446);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnAtualizar);

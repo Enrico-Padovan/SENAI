@@ -73,6 +73,7 @@
             this.cbxProduto.Name = "cbxProduto";
             this.cbxProduto.Size = new System.Drawing.Size(420, 21);
             this.cbxProduto.TabIndex = 3;
+            this.cbxProduto.SelectedIndexChanged += new System.EventHandler(this.cbxProduto_SelectedIndexChanged);
             // 
             // btnAdicinar
             // 
@@ -85,6 +86,7 @@
             this.btnAdicinar.TabIndex = 4;
             this.btnAdicinar.Text = "ADICIONAR";
             this.btnAdicinar.UseVisualStyleBackColor = false;
+            this.btnAdicinar.Click += new System.EventHandler(this.btnAdicinar_Click);
             // 
             // txtQuantidade
             // 

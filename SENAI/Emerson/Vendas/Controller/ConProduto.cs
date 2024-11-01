@@ -19,7 +19,7 @@ namespace Vendas.Controller
         public int quantidade { get; set; }
         public decimal preco { get; set; }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Vendas\\DbVenda.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\Desktop\\Vendas\\DbVenda.mdf;Integrated Security=True");
         Produto produto = new Produto();
 
         public List<Produto> listaProduto()

@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
+using Vendas.Models;
 
 namespace Vendas
 {
     public partial class frmVenda : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Vendas\\DbVenda.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\Desktop\\Vendas\\DbVenda.mdf;Integrated Security=True");
 
         public frmVenda()
         {
@@ -61,6 +63,109 @@ namespace Vendas
             btnEditar.Enabled = false;
             btnExcluir.Enabled = false;
             btnVenda.Enabled = false;
+
+            dgvVenda.Columns.Add("ID", "ID");
+            dgvVenda.Columns.Add("Produto", "Produto");
+            dgvVenda.Columns.Add("Quantidade", "Quantidade");
+            dgvVenda.Columns.Add("Preco", "Preco");
+            dgvVenda.Columns.Add("Total", "Total");
+        }
+
+        private void cbxProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+ 
+                if (con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Produto WHERE Id=@Id", con);
+                cmd.Parameters.AddWithValue("@Id", cbxProduto.SelectedValue);
+                cmd.CommandType = CommandType.Text;
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    txtQuantidade.Enabled = true;
+                    btnAdicinar.Enabled = true;
+                    btnEditar.Enabled = true;
+                    btnExcluir.Enabled = true;
+                    txtPreco.Text = dr["preco"].ToString();
+                    txtQuantidade.Focus();
+                }
+                dr.Close();
+                con.Close();
+            }
+            catch(Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+        }
+
+        private void btnAdicinar_Click(object sender, EventArgs e)
+        {
+            if(txtQuantidade.Text == "")
+            {
+                MessageBox.Show("Por favor, digite a quantidade do produto!", "Quantidade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtQuantidade.Focus();
+                return;
+            }
+            try
+            {
+
+                if (con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Produto WHERE Id = @Id", con);
+                cmd.Parameters.AddWithValue("@Id", cbxProduto.SelectedValue);
+                con.Open();
+                SqlDataReader drs = cmd.ExecuteReader();
+                while (drs.Read()) 
+                {
+                    if (Convert.ToInt32(txtQuantidade.Text) > Convert.ToInt32(drs[2]))
+                    {
+                        MessageBox.Show("Quantidade Indiponivel! Por favor digite uma quantidade valida", "Quantidade", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txtQuantidade.Focus();
+                        return;
+                    }
+                }
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+            var repetido = false;
+            foreach (DataGridViewRow dr in dgvVenda.Rows)
+            {
+                if (Convert.ToString(cbxProduto.SelectedValue) == Convert.ToString(dr.Cells[0].Value))
+                {
+                    repetido = true;
+                }
+            }
+            if (repetido == false)
+            {
+                DataGridViewRow item = new DataGridViewRow();
+                item.CreateCells(dgvVenda);
+                item.Cells[0].Value = cbxProduto.SelectedValue;
+                item.Cells[1].Value = cbxProduto.SelectedText;
+                item.Cells[2].Value = txtQuantidade.Text;
+                item.Cells[3].Value = txtPreco.Text;
+                item.Cells[4].Value = Convert.ToDecimal(txtQuantidade.Text) * Convert.ToDecimal(txtPreco.Text);
+                dgvVenda.Rows.Add(item);
+                cbxProduto.Text = "";
+                txtQuantidade.Text = string.Empty;
+                txtPreco.Text = string.Empty;
+                decimal soma = 0;
+                foreach (DataGridViewRow dr in dgvVenda.Rows)
+                    soma += Convert.ToDecimal(dr.Cells[4].Value);
+                txtTotal.Text = soma.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Produto já cadastrado!", "Produto Repetido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
