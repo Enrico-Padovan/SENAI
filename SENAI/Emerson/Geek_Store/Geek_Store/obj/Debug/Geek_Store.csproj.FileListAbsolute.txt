@@ -1,0 +1,7 @@
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.Properties.Resources.resources
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.Pagina_inicial.resources
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.Pagina_inicial_off.resources
