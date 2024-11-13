@@ -63,9 +63,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_add_male_user_64 {
+        internal static System.Drawing.Bitmap _19082020191051_imagem_des {
             get {
-                object obj = ResourceManager.GetObject("icons8_add_male_user_64", resourceCulture);
+                object obj = ResourceManager.GetObject("_19082020191051_imagem_des", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_add_properties_50 {
+        internal static System.Drawing.Bitmap icons8_adicionar_produto_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8_add_properties_50", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_adicionar_produto_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_profit_50 {
+        internal static System.Drawing.Bitmap icons8_adicionar_usuário_masculino_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8_profit_50", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_adicionar_usuário_masculino_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_total_sales_50 {
+        internal static System.Drawing.Bitmap icons8_mega_sales_96 {
             get {
-                object obj = ResourceManager.GetObject("icons8_total_sales_50", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_mega_sales_96", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
