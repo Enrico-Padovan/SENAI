@@ -16,7 +16,8 @@ namespace Geek_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cadastro_Cliente());
+            Application.Run(new frmCadastro_Cliente(true));
+
         }
     }
 }

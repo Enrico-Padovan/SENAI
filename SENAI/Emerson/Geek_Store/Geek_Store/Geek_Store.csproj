@@ -61,18 +61,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadastro_Cliente.cs">
+    <Compile Include="frmCadastro_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro_Cliente.Designer.cs">
-      <DependentUpon>Cadastro_Cliente.cs</DependentUpon>
+    <Compile Include="frmCadastro_Cliente.Designer.cs">
+      <DependentUpon>frmCadastro_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\ConProduto.cs" />
-    <Compile Include="Tela_Principal.cs">
+    <Compile Include="frmTela_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tela_Principal.Designer.cs">
-      <DependentUpon>Tela_Principal.cs</DependentUpon>
+    <Compile Include="frmTela_Principal.Designer.cs">
+      <DependentUpon>frmTela_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Form6.cs">
       <SubType>Form</SubType>
@@ -86,26 +86,38 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadastro_Cliente.resx">
-      <DependentUpon>Cadastro_Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastro_Cliente.resx">
+      <DependentUpon>frmCadastro_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTela_Principal.resx">
+      <DependentUpon>frmTela_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -123,9 +135,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Banco_GeekStore.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\icons8-adicionar-produto-96.png" />
-    <None Include="Resources\icons8-adicionar-usuário-masculino-96.png" />
-    <None Include="Resources\icons8-mega-sales-96.png" />
+    <None Include="Resources\icons8-vendas-totais-30.png" />
+    <None Include="Resources\icons8-login-arredondado-acima-30.png" />
+    <None Include="Resources\icons8-mega-vendas-30.png" />
+    <None Include="Resources\icons8-produto-novo-30.png" />
+    <None Include="Resources\icons8-adicionar-usuário-masculino-30.png" />
+    <None Include="Resources\icons8-produto-novo-96.png" />
+    <None Include="Resources\icons8-mega-vendas-96.png" />
+    <None Include="Resources\Geek_Store3.png" />
     <None Include="Resources\19082020191051_imagem-des.jpg" />
   </ItemGroup>
   <ItemGroup>
