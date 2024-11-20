@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,30 +62,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCadastro_Cliente.cs">
+    <Compile Include="frmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCadastro_Cliente.Designer.cs">
-      <DependentUpon>frmCadastro_Cliente.cs</DependentUpon>
+    <Compile Include="frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\ConProduto.cs" />
-    <Compile Include="frmTela_Principal.cs">
+    <Compile Include="frmCadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTela_Principal.Designer.cs">
-      <DependentUpon>frmTela_Principal.cs</DependentUpon>
+    <Compile Include="frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="frmComprar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="frmComprar.Designer.cs">
+      <DependentUpon>frmComprar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="frmTela_Principal_off.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="frmTela_Principal_off.Designer.cs">
+      <DependentUpon>frmTela_Principal_off.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogar.Designer.cs">
+      <DependentUpon>frmLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaisVendidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaisVendidos.Designer.cs">
+      <DependentUpon>frmMaisVendidos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
@@ -92,17 +105,26 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTela_Principal_on.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTela_Principal_on.Designer.cs">
+      <DependentUpon>frmTela_Principal_on.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCadastro_Cliente.resx">
-      <DependentUpon>frmCadastro_Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTela_Principal.resx">
-      <DependentUpon>frmTela_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="frmTela_Principal_off.resx">
+      <DependentUpon>frmTela_Principal_off.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTela_Principal_on.resx">
+      <DependentUpon>frmTela_Principal_on.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,14 +157,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Banco_GeekStore.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\icons8-vendas-totais-30.png" />
-    <None Include="Resources\icons8-login-arredondado-acima-30.png" />
-    <None Include="Resources\icons8-mega-vendas-30.png" />
-    <None Include="Resources\icons8-produto-novo-30.png" />
+    <None Include="Resources\icons8-usuário-homem-com-círculo-30.png" />
+    <None Include="Resources\geek _store.png" />
+    <None Include="Resources\icons8-desligar-100.png" />
     <None Include="Resources\icons8-adicionar-usuário-masculino-30.png" />
-    <None Include="Resources\icons8-produto-novo-96.png" />
-    <None Include="Resources\icons8-mega-vendas-96.png" />
-    <None Include="Resources\Geek_Store3.png" />
+    <None Include="Resources\icons8-alterar-usuário-masculino-30.png" />
+    <None Include="Resources\icons8-mais-vendidos-100.png" />
+    <None Include="Resources\icons8-mais-vendidos-30.png" />
+    <None Include="Resources\icons8-cesto-de-compras-2-30.png" />
+    <None Include="Resources\icons8-cesto-de-compras-2-100.png" />
+    <None Include="Resources\icons8-movimento-de-estoque-30.png" />
+    <None Include="Resources\icons8-movimento-de-estoque-100.png" />
+    <None Include="Resources\icons8-produtos-128.png" />
+    <None Include="Resources\icons8-produtos-30.png" />
     <None Include="Resources\19082020191051_imagem-des.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -18,11 +18,12 @@ C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_S
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\bin\Debug\Geek_Store.pdb
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.AssemblyReference.cache
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.SuggestedBindingRedirects.cache
-C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmCadastro_Cliente.resources
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmSplash.resources
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.Properties.Resources.resources
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.GenerateResource.cache
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.csproj.CoreCompileInputs.cache
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.exe
 C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.pdb
-C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmTela_Principal.resources
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmTela_Principal_off.resources
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmTela_Principal_on.resources
+C:\Users\Aluno\source\repos\Enrico-Padovan\SENAI\SENAI\Emerson\Geek_Store\Geek_Store\obj\Debug\Geek_Store.frmCadastro.resources

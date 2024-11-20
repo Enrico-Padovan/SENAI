@@ -16,7 +16,7 @@ namespace Geek_Store
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCadastro_Cliente(true));
+            Application.Run(new frmTela_Principal_off(true));
 
         }
     }

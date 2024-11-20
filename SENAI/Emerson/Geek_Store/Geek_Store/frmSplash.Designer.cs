@@ -34,7 +34,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Geek_Store.Properties.Resources.Geek_Store3;
+            this.pictureBox2.Image = global::Geek_Store.Properties.Resources.geek__store;
             this.pictureBox2.Location = new System.Drawing.Point(0, -1);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(484, 361);

@@ -20,7 +20,7 @@ namespace Geek_Store.Controller
         public int quantidade { get; set; }
         public decimal preco { get; set; }
 
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\Desktop\\Geek_Store\\Geek_Store\\Banco_GeekStore.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Aluno\\source\\repos\\Enrico-Padovan\\SENAI\\SENAI\\Emerson\\Geek_Store\\Geek_Store\\Banco_GeekStore.mdf;Integrated Security=True");
         Produto produto = new Produto();
 
         public List<Produto> listaProduto()

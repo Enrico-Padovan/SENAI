@@ -73,9 +73,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Geek_Store3 {
+        internal static System.Drawing.Bitmap geek__store {
             get {
-                object obj = ResourceManager.GetObject("Geek_Store3", resourceCulture);
+                object obj = ResourceManager.GetObject("geek__store", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_login_arredondado_acima_30 {
+        internal static System.Drawing.Bitmap icons8_alterar_usuário_masculino_30 {
             get {
-                object obj = ResourceManager.GetObject("icons8_login_arredondado_acima_30", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_alterar_usuário_masculino_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_mega_vendas_30 {
+        internal static System.Drawing.Bitmap icons8_cesto_de_compras_2_100 {
             get {
-                object obj = ResourceManager.GetObject("icons8_mega_vendas_30", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_cesto_de_compras_2_100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_produto_novo_30 {
+        internal static System.Drawing.Bitmap icons8_cesto_de_compras_2_30 {
             get {
-                object obj = ResourceManager.GetObject("icons8_produto_novo_30", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_cesto_de_compras_2_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,79 @@ namespace Geek_Store.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_vendas_totais_30 {
+        internal static System.Drawing.Bitmap icons8_desligar_100 {
             get {
-                object obj = ResourceManager.GetObject("icons8_vendas_totais_30", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_desligar_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_vendidos_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mais_vendidos_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_mais_vendidos_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mais_vendidos_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_movimento_de_estoque_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_movimento_de_estoque_100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_movimento_de_estoque_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_movimento_de_estoque_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_produtos_128 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_produtos_128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_produtos_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_produtos_30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuário_homem_com_círculo_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_usuário_homem_com_círculo_30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
