@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *[lang^=pt]{
+        color: green;
+       }
+       *.atencao{
+        color: red;
+       }
+    </style>
+</head>
+<body>
+    <h2>O seletor universal</h2>
+    <p>O sletor universal é indicado pelo (*). Ele seleciona todo o documento</p>
+    <p>A partir do CSS, o asterísco podem ser combinado com namespaces</p>
+    <ul>
+        <li>ns|* - aplica a a todos os elementos no namespace ns</li>
+        <li>*|* - aplica a todos os elementos</li>
+        <li>|* - aplicada a todos os elementos que não tem nomespace declarados</li>
+    </ul>
+    <p>
+        <h2>SINTAXE</h2>
+        *{ propriedade do estilo}
+    </p>
+    <h2>Exemplos</h2>
+    <p class="atencao"><span lang="pt-br">Um span verde</span> e um parágrafo vermelho</p>
+    <p id="conteudoprincipal" lang="pt-br"><samp class="atencao">Um span vermelho</samp> e um parágrafo verde</p>
+</body>
+</html>
