@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Interativo</title>
+    <link rel="stylesheet" href="css/Design.css">
+</head>
+<body>
+    <!-- Cabeçalho com opções -->
+    <header>
+        <div class="navbar">
+            <a href="#cadastroEvento" id="cadastroEvento">Cadastro de Evento</a>
+            <a href="#calendario" id="calendario">Calendário</a>
+            <a href="#eventosMes" id="eventosMes">Eventos do Mês</a>
+        </div>
+    </header>
+
+    <!-- Corpo da página (Calendário e outras seções) -->
+    <div class="calendar-container" id="calendario">
+        <!-- Aqui ficará o calendário interativo -->
+        <div class="sidebar">
+            <ul id="monthsList">
+                <!-- Lista de meses será gerada dinamicamente pelo JavaScript -->
+            </ul>
+        </div>
+
+        <div class="calendar">
+            <header>
+                <h2 id="monthYear"></h2>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dom</th>
+                        <th>Seg</th>
+                        <th>Ter</th>
+                        <th>Qua</th>
+                        <th>Qui</th>
+                        <th>Sex</th>
+                        <th>Sáb</th>
+                    </tr>
+                </thead>
+                <tbody id="days"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="eventos-container" id="eventosMes">
+        <!-- Seção de Eventos do Mês -->
+        <h3>Eventos do Mês</h3>
+        <p>Esta seção mostrará os eventos do mês.</p>
+    </div>
+
+    <div class="cadastro-container" id="cadastroEvento">
+        <!-- Formulário para Cadastro de Evento -->
+        <h3>Cadastro de Evento</h3>
+        <form>
+            <label for="eventoNome">Nome do Evento</label>
+            <input type="text" id="eventoNome" name="eventoNome" required>
+
+            <label for="eventoData">Data</label>
+            <input type="date" id="eventoData" name="eventoData" required>
+
+            <label for="eventoDescricao">Descrição</label>
+            <textarea id="eventoDescricao" name="eventoDescricao" required></textarea>
+
+            <button type="submit">Cadastrar Evento</button>
+        </form>
+    </div>
+
+    <script src="js/Programacao.js"></script>
+</body>
+</html>

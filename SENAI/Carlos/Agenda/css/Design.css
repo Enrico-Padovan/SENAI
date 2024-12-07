@@ -1,0 +1,152 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+}
+
+.navbar a:active {
+    background-color: #388E3C;
+}
+
+/* Estilos para o conteúdo */
+.calendar-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 180px;
+    padding: 20px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#monthsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#monthsList li {
+    font-size: 1.1em;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#monthsList li:hover {
+    background-color: #45a049;
+}
+
+.calendar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para o formulário de cadastro de evento */
+.cadastro-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-container input, .cadastro-container textarea, .cadastro-container button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.cadastro-container button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.cadastro-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para a seção de eventos do mês */
+.eventos-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
