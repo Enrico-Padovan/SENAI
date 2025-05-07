@@ -25,89 +25,199 @@
         </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h1>Análise do Sistema Uber</h1>
-            <p>O Uber é uma plataforma digital que conecta passageiros a motoristas parceiros em tempo real. Esta análise segue os 10 passos exigidos no trabalho para entender, modelar e propor melhorias para o sistema.</p>
-        </section>
+    <main id="inicio">
+  <section>
+    <h1>Página Inicial – Introdução ao Sistema Uber</h1>
+    <p>O Uber é um serviço digital de transporte privado que conecta motoristas parceiros e passageiros por meio de um aplicativo móvel. A plataforma surgiu como uma alternativa mais prática e acessível aos táxis tradicionais, promovendo mobilidade urbana com rapidez, segurança e simplicidade. Esta análise busca modelar o funcionamento do sistema, entender os processos, dados envolvidos, usuários e pontos de melhoria.</p>
+  </section>
+</main>
 
-        <section id="bpmn">
-            <h2>1. Modelagem BPMN</h2>
-            <p>Fluxo principal: Solicitação de corrida até o pagamento e avaliação.</p>
-            <img src="bpmn-exemplo.png" alt="Diagrama BPMN da Corrida Uber"/>
-        </section>
+<main id="bpmn">
+  <section>
+        <h2>Passo 1: BPMN – Entendendo o Caminho Principal</h2>
+        <ul>
+        <li>Passageiro abre o app e solicita corrida.</li>
+        <li>O sistema localiza motoristas próximos.</li>
+        <li>Um motorista é notificado e aceita a corrida.</li>
+        <li>O passageiro recebe os dados do motorista e acompanha a chegada.</li>
+        <li>Corrida é iniciada e finalizada pelo motorista.</li>
+        <li>O valor é calculado e cobrado automaticamente.</li>
+        <li>Passageiro e motorista avaliam-se mutuamente.</li>
+        </ul>
+        <img src="Imagens/diagrama-bpmn.png" alt="Diagrama BPMN Uber" />
+  </section>
+</main>
 
-        <section id="dados">
-            <h2>2. Organização dos Dados</h2>
-            <p>Entidades: Passageiro, Motorista, Corrida, Pagamento, Avaliação.</p>
-            <img src="uml-dados.png" alt="Modelo de dados UML do Uber"/>
-        </section>
+<main id="dados">
+    <section>
+        <h2>Passo 2: Organização dos Dados (Modelo de Dados)</h2>
+        <p><strong>Entidades principais:</strong></p>
+        <ul>
+        <li><strong>Passageiro:</strong> nome, e-mail, localização, histórico de corridas.</li>
+        <li><strong>Motorista:</strong> nome, CNH, veículo, nota média.</li>
+        <li><strong>Corrida:</strong> origem, destino, horário, status, valor.</li>
+        <li><strong>Pagamento:</strong> tipo (cartão, dinheiro), status, valor.</li>
+        <li><strong>Avaliação:</strong> nota, comentários, data.</li>
+        </ul>
+        <p><strong>Modelo UML conceitual:</strong></p>
+        <ul>
+        <li>Passageiro 1:N Corrida</li>
+        <li>Motorista 1:N Corrida</li>
+        <li>Corrida 1:1 Pagamento</li>
+        <li>Corrida 1:N Avaliação</li>
+        </ul>
+        <img src="Imagens/diagrama-dados.png" alt="Modelo de Dados UML Uber" />
+    </section>
+</main>
+<main id="atores">
+  <section>
+    <h2>Passo 3: Quem Faz o Quê? (Papéis e Autonomia)</h2>
+    <p><strong>Passageiro:</strong></p>
+    <ul>
+      <li>Solicita corridas.</li>
+      <li>Avalia o motorista.</li>
+      <li>Escolhe forma de pagamento.</li>
+    </ul>
+    <p><strong>Motorista:</strong></p>
+    <ul>
+      <li>Aceita/rejeita corridas.</li>
+      <li>Executa o transporte.</li>
+      <li>Avalia o passageiro.</li>
+    </ul>
+    <p><strong>Sistema Uber:</strong></p>
+    <ul>
+      <li>Faz pareamento inteligente.</li>
+      <li>Garante segurança dos dados.</li>
+      <li>Calcula valor da corrida.</li>
+      <li>Processa pagamento.</li>
+    </ul>
+    <p><strong>Autonomia:</strong> Alta autonomia para motoristas e passageiros no uso do app. O sistema toma decisões automatizadas com base em algoritmos (ex: tarifa dinâmica).</p>
+  </section>
+</main>
 
-        <section id="atores">
-            <h2>3. Papéis e Autonomia</h2>
-            <ul>
-                <li><strong>Passageiro:</strong> Solicita corridas, escolhe pagamento.</li>
-                <li><strong>Motorista:</strong> Aceita e executa corridas.</li>
-                <li><strong>Sistema:</strong> Pareamento, cálculo, processamento de pagamento.</li>
-            </ul>
-        </section>
+<main id="ideias">
+  <section>
+    <h2>Passo 4: Ideias e Melhorias</h2>
+    <p><strong>Funcionalidades novas:</strong></p>
+    <ul>
+      <li>Corridas agendadas com antecedência.</li>
+      <li>Suporte a corridas com múltiplos destinos.</li>
+      <li>Botão de emergência mais visível e acessível.</li>
+    </ul>
+    <p><strong>Melhorias:</strong></p>
+    <ul>
+      <li>Redução de falhas de GPS.</li>
+      <li>Inclusão de acessibilidade para deficientes visuais.</li>
+      <li>Notificações em tempo real sobre tempo estimado com IA.</li>
+    </ul>
+  </section>
+</main>
 
-        <section id="ideias">
-            <h2>4. Melhorias e Funcionalidades</h2>
-            <ul>
-                <li>Corrida com múltiplos destinos</li>
-                <li>Agendamento prévio</li>
-                <li>Botão de emergência mais acessível</li>
-            </ul>
-        </section>
+<main id="ux">
+    <section>
+        <h2>Passo 5: User Experience (UX)</h2>
+        <p><strong>Pontos positivos:</strong></p>
+        <ul>
+            <li>Interface limpa e intuitiva.</li>
+            <li>Fluxo de solicitação simples.</li>
+            <li>Informações claras de motorista e tempo estimado.</li>
+        </ul>
+        <p><strong>Pontos negativos:</strong></p>
+        <ul>
+            <li>Travamentos em áreas de baixa conexão.</li>
+            <li>Dificuldade de comunicação em caso de problemas.</li>
+            <li>Complexidade em suporte.</li>
+        </ul>
+        <p><strong>Propostas de UX:</strong></p>
+        <ul>
+            <li>Melhorar tempo de resposta em conexões ruins.</li>
+            <li>Central de ajuda mais acessível.</li>
+            <li>Tela de "roteiro seguro" com rastreamento em tempo real por amigos.</li>
+        </ul>
+        <img src="Imagens/wireframe-ux.png" alt="Wireframe UX Uber" class="imagem-pequena" />
+    </section>
+</main>
 
-        <section id="ux">
-            <h2>5. Experiência do Usuário (UX)</h2>
-            <p>Propostas: Central de ajuda simplificada, rastreamento compartilhado, design mais acessível.</p>
-            <img src="mockup-ux.png" alt="Wireframe de melhoria UX"/>
-        </section>
 
-        <section id="api">
-            <h2>6. Conectividade e APIs</h2>
-            <p>Integrações com: Google Maps, sistemas de pagamento, APIs de notificação.</p>
-        </section>
+<main id="api">
+  <section>
+    <h2>Passo 6: Conectividade e APIs</h2>
+    <p><strong>Sistemas integrados:</strong></p>
+    <ul>
+      <li>Google Maps/Waze: rotas, localização, trânsito.</li>
+      <li>Serviços de Pagamento (Stripe, Paypal, Pix): processamento seguro.</li>
+      <li>Push Notification API: envio de atualizações em tempo real.</li>
+      <li>Serviços de verificação de identidade: segurança de cadastro.</li>
+    </ul>
+    <p><strong>Tipo de informações trocadas:</strong> Localização, status da corrida, autenticação, pagamento.</p>
+  </section>
+</main>
 
-        <section id="uml">
-            <h2>7. Diagramas UML</h2>
-            <img src="casos-uso.png" alt="Diagrama de Casos de Uso">
-            <img src="atividades.png" alt="Diagrama de Atividades">
-        </section>
+<main id="uml">
+    <section>
+        <h2>Passo 7: Diagramas Técnicos (UML)</h2>
+        <p><strong>Casos de Uso:</strong></p>
+        <ul>
+            <li>Solicitar Corrida</li>
+            <li>Aceitar Corrida</li>
+            <li>Avaliar Corrida</li>
+            <li>Consultar Histórico</li>
+        </ul>
+        <p><strong>Diagrama de Classes:</strong> Passageiro, Motorista, Corrida, Avaliação, Pagamento</p>
+        <p><strong>Diagrama de Atividades:</strong> Processo detalhado da solicitação até o término da corrida</p>
+        <div class="imagens-uml">
+            <img src="Imagens/diagrama-casos-uso.png" alt="Casos de Uso Uber" class="imagem-pequena" />
+            <img src="Imagens/diagrama-atividades.png" alt="Atividades Uber" class="imagem-pequena" />
+            <img src="Imagens/diagrama-classes.png" alt="Classes Uber" class="imagem-pequena" />
+        </div>
+    </section>
+</main>
 
-        <section id="teoria">
-            <h2>8. Aplicação Teórica</h2>
-            <p>Modelagem BPMN, UML, Engenharia de Requisitos e Design UX aplicados ao Uber.</p>
-        </section>
 
-        <section id="requisitos">
-            <h2>9. Requisitos do Sistema</h2>
-            <h3>Funcionais</h3>
-            <ul>
-                <li>Solicitar corrida</li>
-                <li>Localizar motorista</li>
-                <li>Realizar pagamento</li>
-            </ul>
-            <h3>Não Funcionais</h3>
-            <ul>
-                <li>Alta disponibilidade (99%)</li>
-                <li>Segurança de dados</li>
-                <li>Desempenho rápido</li>
-            </ul>
-        </section>
+<main id="teoria">
+  <section>
+    <h2>Passo 8: Aplicação da Teoria</h2>
+    <ul>
+      <li>Modelagem BPMN para entender processos principais.</li>
+      <li>UML (Casos de uso, classes, atividades) para estruturar e visualizar interações.</li>
+      <li>UX design usado para melhorar o uso e acessibilidade do sistema.</li>
+      <li>Engenharia de Requisitos aplicada na análise das funcionalidades e regras do sistema.</li>
+    </ul>
+  </section>
+</main>
 
-        <section id="regras">
-            <h2>10. Regras de Negócio</h2>
-            <ul>
-                <li>Tarifa dinâmica conforme demanda e distância</li>
-                <li>Avaliações influenciam disponibilidade</li>
-                <li>Pagamentos automáticos pós-corrida</li>
-            </ul>
-        </section>
-    </main>
+<main id="requisitos">
+  <section>
+    <h2>Passo 9: Requisitos</h2>
+    <h3>Funcionais (RF):</h3>
+    <ul>
+      <li>RF01: Passageiro pode solicitar corrida.</li>
+      <li>RF02: Sistema localiza motoristas próximos.</li>
+      <li>RF03: Motorista aceita corrida.</li>
+      <li>RF04: Corrida é rastreada em tempo real.</li>
+      <li>RF05: Aplicativo calcula valor e processa pagamento.</li>
+    </ul>
+    <h3>Não Funcionais (RNF):</h3>
+    <ul>
+      <li>RNF01: Sistema deve funcionar em 99% do tempo.</li>
+      <li>RNF02: Informações de pagamento criptografadas.</li>
+      <li>RNF03: Interface deve carregar em até 2 segundos.</li>
+      <li>RNF04: App deve rodar em Android e iOS.</li>
+    </ul>
+  </section>
+</main>
+
+<main id="regras">
+  <section>
+    <h2>Passo 10: Regras de Negócio</h2>
+    <ul>
+      <li>Corridas não podem ser iniciadas se motorista estiver com documentos vencidos.</li>
+      <li>Avaliações abaixo de 4,0 por muitos usuários resultam em alerta para o motorista.</li>
+      <li>O valor da corrida é ajustado conforme distância, tráfego e demanda (tarifa dinâmica).</li>
+      <li>Corridas em áreas de risco podem ser recusadas automaticamente.</li>
+    </ul>
+  </section>
+</main>
 
     <footer>
         <p>&copy; 2025 - Análise do Sistema Uber</p>
