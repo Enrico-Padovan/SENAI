@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Uber - Análise de Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#bpmn">BPMN</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#atores">Papéis</a></li>
+                <li><a href="#ideias">Melhorias</a></li>
+                <li><a href="#ux">UX</a></li>
+                <li><a href="#api">Conectividade</a></li>
+                <li><a href="#uml">Diagramas</a></li>
+                <li><a href="#teoria">Teoria</a></li>
+                <li><a href="#requisitos">Requisitos</a></li>
+                <li><a href="#regras">Regras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Análise do Sistema Uber</h1>
+            <p>O Uber é uma plataforma digital que conecta passageiros a motoristas parceiros em tempo real. Esta análise segue os 10 passos exigidos no trabalho para entender, modelar e propor melhorias para o sistema.</p>
+        </section>
+
+        <section id="bpmn">
+            <h2>1. Modelagem BPMN</h2>
+            <p>Fluxo principal: Solicitação de corrida até o pagamento e avaliação.</p>
+            <img src="bpmn-exemplo.png" alt="Diagrama BPMN da Corrida Uber"/>
+        </section>
+
+        <section id="dados">
+            <h2>2. Organização dos Dados</h2>
+            <p>Entidades: Passageiro, Motorista, Corrida, Pagamento, Avaliação.</p>
+            <img src="uml-dados.png" alt="Modelo de dados UML do Uber"/>
+        </section>
+
+        <section id="atores">
+            <h2>3. Papéis e Autonomia</h2>
+            <ul>
+                <li><strong>Passageiro:</strong> Solicita corridas, escolhe pagamento.</li>
+                <li><strong>Motorista:</strong> Aceita e executa corridas.</li>
+                <li><strong>Sistema:</strong> Pareamento, cálculo, processamento de pagamento.</li>
+            </ul>
+        </section>
+
+        <section id="ideias">
+            <h2>4. Melhorias e Funcionalidades</h2>
+            <ul>
+                <li>Corrida com múltiplos destinos</li>
+                <li>Agendamento prévio</li>
+                <li>Botão de emergência mais acessível</li>
+            </ul>
+        </section>
+
+        <section id="ux">
+            <h2>5. Experiência do Usuário (UX)</h2>
+            <p>Propostas: Central de ajuda simplificada, rastreamento compartilhado, design mais acessível.</p>
+            <img src="mockup-ux.png" alt="Wireframe de melhoria UX"/>
+        </section>
+
+        <section id="api">
+            <h2>6. Conectividade e APIs</h2>
+            <p>Integrações com: Google Maps, sistemas de pagamento, APIs de notificação.</p>
+        </section>
+
+        <section id="uml">
+            <h2>7. Diagramas UML</h2>
+            <img src="casos-uso.png" alt="Diagrama de Casos de Uso">
+            <img src="atividades.png" alt="Diagrama de Atividades">
+        </section>
+
+        <section id="teoria">
+            <h2>8. Aplicação Teórica</h2>
+            <p>Modelagem BPMN, UML, Engenharia de Requisitos e Design UX aplicados ao Uber.</p>
+        </section>
+
+        <section id="requisitos">
+            <h2>9. Requisitos do Sistema</h2>
+            <h3>Funcionais</h3>
+            <ul>
+                <li>Solicitar corrida</li>
+                <li>Localizar motorista</li>
+                <li>Realizar pagamento</li>
+            </ul>
+            <h3>Não Funcionais</h3>
+            <ul>
+                <li>Alta disponibilidade (99%)</li>
+                <li>Segurança de dados</li>
+                <li>Desempenho rápido</li>
+            </ul>
+        </section>
+
+        <section id="regras">
+            <h2>10. Regras de Negócio</h2>
+            <ul>
+                <li>Tarifa dinâmica conforme demanda e distância</li>
+                <li>Avaliações influenciam disponibilidade</li>
+                <li>Pagamentos automáticos pós-corrida</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Análise do Sistema Uber</p>
+    </footer>
+</body>
+</html>
